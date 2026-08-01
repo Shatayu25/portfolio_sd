@@ -1,5 +1,4 @@
 import { HiOutlineArrowDownTray, HiPlay } from 'react-icons/hi2';
-import Anchor from './anchor';
 
 function HeroSection() {
   return (
@@ -18,15 +17,30 @@ function HeroSection() {
       </div>
       <div className='flex items-center gap-8 mt-15'>
         <div className='p-4 rounded-full flex gap-4 bg-slate-100 border-[0.5px] border-black'>
-          <Anchor href='https://www.linkedin.com/in/shatayu-deshpande'>
+          <a
+            target='_blank'
+            rel='noreferrer'
+            className='w-5 h-5 hover:translate-y-[-1px] transition-all duration-[0.3s]'
+            href='https://www.linkedin.com/in/shatayu-deshpande'
+          >
             <img src='./linkedin_logo.svg' alt='linkedin-logo' />
-          </Anchor>
-          <Anchor href='https://github.com/Shatayu25'>
+          </a>
+          <a
+            target='_blank'
+            rel='noreferrer'
+            className='w-5 h-5 hover:translate-y-[-1px] transition-all duration-[0.3s]'
+            href='https://github.com/Shatayu25'
+          >
             <img src='./github_logo.svg' alt='github-logo' />
-          </Anchor>
-          <Anchor href='https://leetcode.com/u/Shatayu_25/'>
+          </a>
+          <a
+            target='_blank'
+            rel='noreferrer'
+            className='w-5 h-5 hover:translate-y-[-1px] transition-all duration-[0.3s]'
+            href='https://leetcode.com/u/Shatayu_25/'
+          >
             <img src='./leetcode.svg' alt='leetcode-logo' />
-          </Anchor>
+          </a>
         </div>
         <a
           target='_blank'
