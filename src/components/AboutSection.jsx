@@ -10,7 +10,7 @@ import {
 
 function AboutSection() {
   return (
-    <section className='bg-slate-300 py-20'>
+    <section className='bg-slate-300 py-20' id='about'>
       <div className='flex px-4 font-poller text-5xl'>
         <h1 className='text-red-500'>About Me</h1>
         <span className='text-red-950'>&mdash;</span>
@@ -28,7 +28,9 @@ function AboutSection() {
             web applications using React and its ecosystem. I care about writing
             clean, maintainable code and making interfaces that users understand
             easily. Currently, I&apos;m adding backend skills with Node.js and
-            Express, MongoDB to build complete full-stack apps and to understand how apps work end-to-end. Open for new opportunities and eager to gain practical exposure to real world problems.
+            Express, MongoDB to build complete full-stack apps and to understand
+            how apps work end-to-end. Open for new opportunities and eager to
+            gain practical exposure to real world problems.
           </p>
         </div>
         <div className=' flex flex-col justify-between bg-slate-500 w-full h-full p-6 rounded-2xl'>

@@ -2,7 +2,7 @@ import { HiArrowUpRight } from 'react-icons/hi2';
 
 function ProjectSection() {
   return (
-    <section className='bg-slate-200 py-20'>
+    <section className='bg-slate-200 py-20' id='work'>
       <div className='flex px-4 font-poller text-5xl'>
         <h1 className='text-red-500'>Featured Projects</h1>
         <span className='text-red-950'>&mdash;</span>

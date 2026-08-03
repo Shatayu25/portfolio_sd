@@ -3,7 +3,7 @@ import { IoIosSend } from 'react-icons/io';
 
 function ConnectSection() {
   return (
-    <section className='bg-slate-950 py-20'>
+    <section className='bg-slate-950 py-20' id='connect'>
       <div className='flex flex-col px-4 font-poller'>
         <h1 className='text-red-500 text-5xl'>Let&apos;s Connect!</h1>
         <div className='flex items-center gap-2 text-xl'>
@@ -55,12 +55,12 @@ function ConnectSection() {
             className='rounded-2xl p-1 pb-20'
             placeholder='Please enter your message'
           />
-            <button className='rounded-full flex w-fit items-center gap-1 border-[0.5px] border-black bg-red-500 hover:bg-red-600 text-black p-3 transition-all duration-[0.2s]'>
-              <span>
-                <IoIosSend />
-              </span>
-              <p>Send Message</p>
-            </button>
+          <button className='rounded-full flex w-fit items-center gap-1 border-[0.5px] border-black bg-red-500 hover:bg-red-600 text-black p-3 transition-all duration-[0.2s]'>
+            <span>
+              <IoIosSend />
+            </span>
+            <p>Send Message</p>
+          </button>
         </form>
       </div>
     </section>
