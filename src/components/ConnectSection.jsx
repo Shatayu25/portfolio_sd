@@ -4,7 +4,7 @@ import { IoIosSend } from 'react-icons/io';
 function ConnectSection() {
   return (
     <section className='bg-slate-950 py-20' id='connect'>
-      <div className='flex flex-col px-4 font-poller'>
+      <div className='flex flex-col px-4 font-poller mt-10'>
         <h1 className='text-red-500 text-5xl'>Let&apos;s Connect!</h1>
         <div className='flex items-center gap-2 text-xl'>
           <span className='text-red-500'>
@@ -15,7 +15,7 @@ function ConnectSection() {
           </h2>
         </div>
       </div>
-      <div className='bg-slate-400 font-roboto p-10 mt-4 w-[30%] mx-auto rounded-2xl'>
+      <div className='bg-slate-400 font-roboto p-10 mt-16 w-[35%] mx-auto rounded-2xl'>
         <form className='text-slate-800 flex flex-col gap-3'>
           <label htmlFor='name' className='font-bold'>
             Name:-&nbsp;
