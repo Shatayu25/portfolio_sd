@@ -23,6 +23,7 @@ function ConnectSection() {
           <input
             type='text'
             id='name'
+            name='name'
             className='rounded-2xl p-1'
             placeholder='Please enter your name'
             required
@@ -33,6 +34,7 @@ function ConnectSection() {
           <input
             type='email'
             id='email'
+            name='email'
             className='rounded-2xl p-1'
             placeholder='Please enter your email'
             required
@@ -43,15 +45,17 @@ function ConnectSection() {
           <input
             type='text'
             id='subject'
+            name='subject'
             className='rounded-2xl p-1'
             placeholder='Subject'
           />
           <label htmlFor='message' className='font-bold'>
             Message:-&nbsp;
           </label>
-          <input
+          <textarea
             type='text'
             id='message'
+            name='message'
             className='rounded-2xl p-1 pb-20'
             placeholder='Please enter your message'
           />
