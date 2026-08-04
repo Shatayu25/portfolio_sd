@@ -1,40 +1,58 @@
-import { HiOutlineArrowDownTray, HiPlay } from 'react-icons/hi2';
-import Anchor from './Anchor';
+import { HiPlay } from "react-icons/hi2";
+import Anchor from "./Anchor";
 
 function HeroSection() {
   return (
-    <section className='bg-slate-500 min-h-screen flex flex-col justify-center items-center py-20'>
-      <div className='p-24 flex flex-col items-center'>
-        <h1 className='font-poller animate-move-in-right  text-5xl'>
+    <section className="flex min-h-screen flex-col items-center justify-center bg-slate-500">
+      <div className="flex flex-col items-center justify-center">
+        <h1 className="animate-move-in-right font-poller text-base md:text-5xl lg:text-6xl">
           Hi,
-          <span className='text-red-500 block'>I&apos;m Shatayu Deshpande</span>
+          <span className="block text-red-500">I&apos;m Shatayu Deshpande</span>
         </h1>
-        <div className='mt-5 text-lg flex items-center gap-1'>
+        <div className="flex items-center justify-center p-1 md:p-2 lg:p-4">
           <HiPlay />
-          <span className='font-roboto animate-move-in-left text-xl text-slate-200 italic font-medium'>
+          <span className="animate-move-in-left font-roboto text-slate-200 text-xl">
             Front-end Engineer
           </span>
         </div>
       </div>
-      <div className='flex items-center gap-8 mt-16'>
-        <div className='p-4 animate-move-in-right rounded-full flex gap-4 bg-slate-100 border-[0.5px] border-black'>
-          <Anchor link='https://www.linkedin.com/in/shatayu-deshpande'>
-            <img src='./linkedin_logo.svg' alt='LinkedIn' />
+      <div className="mt-4 flex items-center gap-4 md:mt-8 md:gap-8 lg:mt-10 lg:gap-10">
+        <div className="flex animate-move-in-right rounded-full border-[0.5px] border-black bg-slate-100 p-2 md:p-2 gap-4 lg:p-4">
+          <Anchor link="https://www.linkedin.com/in/shatayu-deshpande">
+            <img
+              className="h-full w-full"
+              src="./linkedin_logo.svg"
+              alt="LinkedIn"
+            />
           </Anchor>
-          <Anchor link='https://github.com/Shatayu25'>
-            <img src='./github_logo.svg' alt='Github' />
+          <Anchor link="https://github.com/Shatayu25">
+            <img
+              className="h-full w-full"
+              src="./github_logo.svg"
+              alt="Github"
+            />
           </Anchor>
-          <Anchor link='https://leetcode.com/u/Shatayu_25/'>
-            <img src='./leetcode.svg' alt='Leetcode' />
+          <Anchor link="https://leetcode.com/u/Shatayu_25/">
+            <img
+              className="h-full w-full"
+              src="./leetcode.svg"
+              alt="Leetcode"
+            />
           </Anchor>
         </div>
         <a
-          className='flex animate-move-in-left font-roboto rounded-full items-center gap-2 border-[0.5px] border-black bg-red-500 hover:bg-red-600 text-black p-3 transition-all duration-[0.2s]'
-          target='_blank'
-          rel='noreferrer'
-          href='https://drive.google.com/file/d/1m5h1uxWvLp-NEkX04kYuhqwxOpfqiAie/view?usp=drive_link'
+          className="flex animate-move-in-left items-center rounded-full border-[0.5px] border-black bg-red-500 p-1 font-roboto text-black transition-all duration-[0.2s] hover:bg-red-600 md:gap-1 md:p-2 lg:gap-2 lg:p-4"
+          target="_blank"
+          rel="noreferrer"
+          href="https://drive.google.com/file/d/1m5h1uxWvLp-NEkX04kYuhqwxOpfqiAie/view?usp=drive_link"
         >
-          <HiOutlineArrowDownTray />
+          <span className="h-5 w-5 lg:h-6 lg:w-6">
+            <img
+              className="h-full w-full"
+              src="./download-logo.svg"
+              alt="download"
+            />
+          </span>
           Resume
         </a>
       </div>

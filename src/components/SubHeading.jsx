@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 function SubHeading({ children }) {
   return (
-    <div className='flex gap-1 text-lg items-center font-extrabold text-slate-900 border-b-[1px]'>
+    <div className="flex items-center border-b-[1px] font-extrabold text-slate-900 md:text-base lg:text-lg xl:gap-1">
       {children}
     </div>
   );
