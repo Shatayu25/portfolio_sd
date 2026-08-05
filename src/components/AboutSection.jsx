@@ -110,7 +110,7 @@ function AboutSection() {
                   </TechPills>
                   <TechPills>
                     <span className="inline-block h-4 w-4">
-                      <img src="./nextjs-logo.svg" alt="nextjs-logo" />
+                      <img src="./nextjs.svg" alt="nextjs-logo" />
                     </span>
                     <p>Next.js</p>
                   </TechPills>
