@@ -2,18 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Add this at the bottom */
-.bg-terminal-grid {
-  /* Option 2 Base Background: Zinc-950 */
-  background-color: #09090b; 
-  
-  /* The Emerald grid with 50% opacity built directly into the hex code (#10B98180) and Zinc-950 masking */
-  background-image: 
-    repeating-linear-gradient(to right, transparent 0, transparent 2px, #09090b 2px, #09090b 6px, transparent 6px, transparent 8px), 
-    repeating-linear-gradient(to bottom, transparent 0, transparent 2px, #09090b 2px, #09090b 6px, transparent 6px, transparent 8px), 
-    linear-gradient(to bottom, #10b98180 0.72px, transparent 0.72px), 
-    linear-gradient(to right, #10b98180 0.72px, transparent 0.72px);
-  
-  background-size: 100% 100%, 100% 100%, 24px 24px, 24px 24px;
-  background-position: 0 0, 0 0, 0 -0.24px, -0.24px 0;
+html {
+  scroll-behavior: smooth;
+}
+
+/* Tailwind's compiler specifically requires custom classes to be wrapped in @layer utilities to generate responsive prefixes like sm: and md:. */
+@layer utilities {
+  .bg-terminal-grid {
+    background-color: #09090b;
+    background-image:
+      repeating-linear-gradient(
+        to right,
+        transparent 0,
+        transparent 2px,
+        #09090b 2px,
+        #09090b 6px,
+        transparent 6px,
+        transparent 8px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 2px,
+        #09090b 2px,
+        #09090b 6px,
+        transparent 6px,
+        transparent 8px
+      ),
+      linear-gradient(to bottom, #10b98180 0.72px, transparent 0.72px),
+      linear-gradient(to right, #10b98180 0.72px, transparent 0.72px);
+    background-size:
+      100% 100%,
+      100% 100%,
+      24px 24px,
+      24px 24px;
+    background-position:
+      0 0,
+      0 0,
+      0 -0.24px,
+      -0.24px 0;
+  }
 }

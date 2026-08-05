@@ -3,7 +3,7 @@ import { IoIosSend } from "react-icons/io";
 
 function ConnectSection() {
   return (
-    <section className="bg-terminal-grid py-20" id="connect">
+    <section className="sm:bg-terminal-grid bg-zinc-950 py-20" id="connect">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="my-4 flex flex-col font-poller sm:my-6 md:my-8 lg:my-10">
           <h1 className="text-2xl text-zinc-50 sm:text-4xl md:text-5xl lg:text-6xl">

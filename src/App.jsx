@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="flex min-h-screen flex-col font-sans text-zinc-300">
+    <div className="flex min-h-screen flex-col font-poller text-zinc-300">
       <Header />
 
       <main className="flex-grow">
