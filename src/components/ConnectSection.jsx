@@ -6,17 +6,17 @@ function ConnectSection() {
     <section className="bg-slate-300 py-20" id="connect">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="flex flex-col font-poller md:my-8 lg:my-10">
-          <h1 className="text-red-500 md:text-5xl lg:text-6xl">
+          <h1 className="text-3xl text-red-500 sm:text-4xl md:text-5xl lg:text-6xl">
             Let&apos;s <span className="text-red-950">Connect!</span>
           </h1>
-          <div className="flex items-center gap-2 font-roboto font-bold text-red-600 md:text-xl lg:text-2xl">
+          <div className="flex flex-wrap items-center gap-1 font-roboto text-lg font-bold text-red-600 md:text-xl lg:text-2xl">
             <span>
               <FaRegHandshake />
             </span>
-            <h2>And discuss potential opportunities.</h2>
+            <span>And discuss potential opportunities.</span>
           </div>
         </div>
-        <div className="mx-auto mt-16 rounded-lg bg-slate-800/40 p-6 font-roboto md:w-[50%] lg:w-[40%]">
+        <div className="mx-auto mt-16 w-full max-w-md rounded-lg bg-slate-800/40 p-6 font-roboto">
           <form className="flex flex-col gap-3 text-slate-800">
             <label htmlFor="name" className="font-bold">
               Name:-&nbsp;

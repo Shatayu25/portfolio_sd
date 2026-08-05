@@ -14,21 +14,23 @@ function AboutSection() {
   return (
     <section className="bg-slate-300 py-20" id="about">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
-        <div className="flex font-poller md:my-8 md:text-5xl lg:my-10 lg:text-6xl">
+        <div className="my-4 flex font-poller text-2xl sm:my-6 sm:text-4xl md:my-8 md:text-5xl lg:my-10 lg:text-6xl">
           <h1 className="text-red-500">
             About <span className="text-red-950">Me</span>
           </h1>
           <span className="text-slate-400">&mdash;</span>
         </div>
-        <div className="grid gap-4 font-roboto md:grid-cols-3 md:grid-rows-2">
-          <div className="col-start-1 col-end-3 h-full w-full rounded-2xl bg-slate-500 p-4">
+
+        <div className="grid gap-4 font-roboto md:grid-cols-3">
+          {/* Replaced w-screen and sm/md/lg widths with a single w-full */}
+          <div className="h-full w-full rounded-2xl bg-slate-500 p-4 md:col-start-1 md:col-end-3">
             <SubHeading>
               <span>
                 <HiOutlineUser />
               </span>
               <p>Info</p>
             </SubHeading>
-            <p className="md:text-base lg:text-lg">
+            <p className="text-sm md:text-base lg:text-lg">
               I&apos;m a frontend engineer focused on building smooth,
               responsive web applications using React and its ecosystem. I care
               about writing clean, maintainable code and making interfaces that
@@ -39,6 +41,8 @@ function AboutSection() {
               problems.
             </p>
           </div>
+
+          {/* Replaced w-screen and sm/md/lg widths with a single w-full */}
           <div className="flex h-full w-full flex-col justify-between rounded-2xl bg-slate-500 p-4">
             <div>
               <SubHeading>
@@ -47,34 +51,36 @@ function AboutSection() {
                 </span>
                 <p>Experience</p>
               </SubHeading>
-              <p className="md:text-base lg:text-lg">Fresher</p>
+              <p className="text-sm md:text-base lg:text-lg">Fresher</p>
             </div>
             <div>
               <SubHeading>
                 <span>
                   <HiOutlineMapPin />
                 </span>
-                <p className="md:text-base lg:text-lg">Location</p>
+                <p className="text-sm md:text-base lg:text-lg">Location</p>
               </SubHeading>
-              <p className="md:text-base lg:text-lg">Vapi, Gujarat</p>
+              <p className="text-sm md:text-base lg:text-lg">Vapi, Gujarat</p>
             </div>
           </div>
-          <div className="col-start-1 col-end-3">
+
+          <div className="md:col-start-1 md:col-end-3">
+            {/* Replaced w-screen and sm/md/lg widths with a single w-full */}
             <div className="h-full w-full rounded-2xl bg-slate-500 p-4">
               <SubHeading>
                 <span>
                   <HiOutlineCommandLine />
                 </span>
-                <p className="md:text-base lg:text-lg">Technical Skill-set</p>
+                <p>Technical Skill-set</p>
               </SubHeading>
-              <div className="mt-4 rounded-2xl p-1">
+              <div className="mt-1 rounded-2xl p-1 sm:mt-4 md:mt-4 lg:mt-4">
                 <div className="flex items-center gap-1 p-1 text-slate-200 lg:text-base lg:font-extrabold">
                   <span>
                     <HiOutlineComputerDesktop />
                   </span>
-                  <p>Frontend:-</p>
+                  <p className="">Frontend:-</p>
                 </div>
-                <div className="my-2 grid justify-items-center gap-2 md:grid-cols-2 lg:grid-cols-3">
+                <div className="my-2 flex flex-wrap justify-items-center gap-2 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3">
                   <TechPills>
                     <span className="inline-block h-4 w-4">
                       <img src="./js-logo.svg" alt="js-logo" />
@@ -129,6 +135,8 @@ function AboutSection() {
               </div>
             </div>
           </div>
+
+          {/* Replaced w-screen and sm/md/lg widths with a single w-full */}
           <div className="h-full w-full rounded-2xl bg-slate-500 p-4">
             <SubHeading>
               <span>
@@ -136,7 +144,7 @@ function AboutSection() {
               </span>
               <p>Currently Learning</p>
             </SubHeading>
-            <div className="mt-4 flex flex-col gap-4 md:py-2 lg:py-4">
+            <div className="mt-4 flex flex-wrap gap-4 md:flex-col md:py-2 lg:flex-col lg:py-4">
               <TechPills>
                 <span className="inline-block h-4 w-4">
                   <img src="./nodejs-logo.svg" alt="nodejs-logo" />

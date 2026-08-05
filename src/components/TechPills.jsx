@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 function TechPills({ children }) {
   return (
-    <div className='flex items-center gap-2 p-1 content-center w-fit bg-slate-800/40 rounded-2xl text-slate-50 hover:text-slate-800 hover:bg-slate-200 cursor-pointer transition-all duration-300'>
+    <div className="flex w-fit cursor-pointer content-center items-center gap-2 rounded-2xl bg-slate-800/40 text-xs text-slate-50 transition-all duration-300 hover:bg-slate-200 hover:text-slate-800 p-[3px] sm:p-1 sm:text-lg md:p-1 md:text-lg lg:p-1 lg:text-lg">
       {children}
     </div>
   );

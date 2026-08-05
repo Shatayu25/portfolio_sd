@@ -1,9 +1,9 @@
-import Logo from './Logo';
-import Navigation from './Navigation';
+import Logo from "./Logo";
+import Navigation from "./Navigation";
 
 function Header() {
   return (
-    <header className='bg-slate-800 fixed w-full flex justify-between p-3 items-center border-b-[0.5px] z-50'>
+    <header className="fixed z-50 flex w-full items-center justify-between border-b-[0.5px] bg-slate-800 p-3">
       <Logo />
       <Navigation />
     </header>

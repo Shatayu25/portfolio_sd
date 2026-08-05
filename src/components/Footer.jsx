@@ -1,15 +1,15 @@
 function Footer() {
   return (
-    <footer className=' bg-slate-800 text-sm flex justify-between text-slate-100 p-6 border-t-[0.5px]'>
+    <footer className="flex flex-wrap items-center justify-between gap-1 border-t-[0.5px] bg-slate-800 p-4 text-xs text-slate-100 sm:text-sm md:text-sm lg:text-base">
       <p>&copy; 2026, Shatayu Deshpande. All rights reserved.</p>
-      <p className='flex items-center gap-1'>
+      <p className="flex items-center gap-1">
         Made with
-        <span className='w-5 h-5'>
-          <img src='./react_logo.svg' alt='react-logo' />
+        <span className="h-4 w-4 sm:h-6 sm:w-6 md:h-6 md:w-6 lg:h-6 lg:w-6">
+          <img src="./react_logo.svg" alt="react-logo" />
         </span>
         and
-        <span className='w-5 h-5'>
-          <img src='./tailwind_logo.svg' alt='tailwind-logo' />
+        <span className="h-4 w-4 sm:h-6 sm:w-6 md:h-6 md:w-6 lg:h-6 lg:w-6">
+          <img src="./tailwind_logo.svg" alt="tailwind-logo" />
         </span>
       </p>
     </footer>
