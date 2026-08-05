@@ -149,7 +149,7 @@ function AboutSection() {
               </TechPills>
               <TechPills>
                 <span className="inline-block h-4 w-4">
-                  <img src="./express-js.svg" alt="express-logo" />
+                  <img src="./express-logo.svg" alt="express-logo" />
                 </span>
                 <p>express.js</p>
               </TechPills>
