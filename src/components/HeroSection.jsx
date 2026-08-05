@@ -3,7 +3,7 @@ import Anchor from "./Anchor";
 
 function HeroSection() {
   return (
-    <section className="flex min-h-screen flex-col items-center justify-center bg-zinc-950">
+    <section className="flex min-h-screen flex-col items-center justify-center bg-terminal-grid">
       <div className="flex flex-col items-center justify-center">
         <h1 className="animate-move-in-right font-poller text-lg sm:text-4xl md:text-5xl lg:text-6xl">
           Hi,

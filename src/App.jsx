@@ -1,13 +1,13 @@
-import Header from './components/Header';
-import Content from './components/Content';
-import Footer from './components/Footer';
+import Header from "./components/Header";
+import Content from "./components/Content";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className='min-h-screen text-zinc-300 flex flex-col'>
+    <div className="flex min-h-screen flex-col font-sans text-zinc-300">
       <Header />
 
-      <main className='flex-grow'>
+      <main className="flex-grow">
         <Content />
       </main>
 
