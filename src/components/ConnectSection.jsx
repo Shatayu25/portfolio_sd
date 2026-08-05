@@ -5,8 +5,8 @@ function ConnectSection() {
   return (
     <section className="bg-slate-300 py-20" id="connect">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
-        <div className="flex flex-col font-poller md:my-8 lg:my-10">
-          <h1 className="text-3xl text-red-500 sm:text-4xl md:text-5xl lg:text-6xl">
+        <div className="my-4 flex flex-col font-poller sm:my-6 md:my-8 lg:my-10">
+          <h1 className="text-2xl text-red-500 sm:text-4xl md:text-5xl lg:text-6xl">
             Let&apos;s <span className="text-red-950">Connect!</span>
           </h1>
           <div className="flex flex-wrap items-center gap-1 font-roboto text-lg font-bold text-red-600 md:text-xl lg:text-2xl">

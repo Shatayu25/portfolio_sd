@@ -5,7 +5,7 @@ function ProjectSection() {
   return (
     <section className="bg-slate-200 py-20" id="work">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
-        <div className="my-4 flex flex-wrap font-poller text-3xl sm:my-6 sm:text-4xl md:my-8 md:text-5xl lg:my-10 lg:text-6xl">
+        <div className="my-4 flex flex-wrap font-poller text-2xl sm:my-6 sm:text-4xl md:my-8 md:text-5xl lg:my-10 lg:text-6xl">
           <h1 className="text-red-500">
             Featured <span className="text-red-950">Projects</span>
           </h1>
@@ -20,7 +20,7 @@ function ProjectSection() {
               href="https://the-wild-oasis-sd.vercel.app/"
               target="_blank"
               rel="noreferrer"
-              className="flex cursor-pointer items-center gap-1 text-xs sm:text-base md:text-base lg:text-base rounded-2xl bg-slate-800/40 p-1 text-slate-50 hover:bg-slate-200 hover:text-slate-800"
+              className="flex cursor-pointer items-center gap-1 rounded-2xl bg-slate-800/40 p-1 text-xs text-slate-50 hover:bg-slate-200 hover:text-slate-800 sm:text-base md:text-base lg:text-base"
             >
               <span>
                 <HiArrowUpRight />
@@ -28,9 +28,9 @@ function ProjectSection() {
               <p>Live Demo</p>
             </a>
           </div>
-          <div className="lg:flex-no-wrap flex flex-wrap w-full items-start gap-4 sm:flex-wrap md:flex-nowrap">
+          <div className="lg:flex-no-wrap flex w-full flex-wrap items-start gap-4 sm:flex-wrap md:flex-nowrap">
             <div className="lg:w-[1/2]">
-              <p className='text-sm sm:text-base md:text-base lg:text-base'>
+              <p className="text-sm sm:text-base md:text-base lg:text-base">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Molestiae ad reprehenderit nulla eos facere quasi nesciunt
                 suscipit eligendi veritatis saepe maiores beatae soluta,
@@ -48,7 +48,7 @@ function ProjectSection() {
               />
             </div>
           </div>
-          <div className="flex gap-4 flex-wrap sm:flex-wrap">
+          <div className="flex flex-wrap gap-4 sm:flex-wrap">
             <TechPills>
               <span className="inline-block h-4 w-4">
                 <img src="./react_logo.svg" alt="react_logo" />
