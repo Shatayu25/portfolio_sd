@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="flex flex-wrap items-center justify-between gap-1 border-t-[0.5px] bg-slate-800 p-4 text-xs text-slate-100 sm:text-sm md:text-sm lg:text-base">
+    <footer className="flex flex-wrap items-center justify-between gap-1 border-t-[0.5px] bg-zinc-950 p-4 text-xs sm:text-sm md:text-sm lg:text-base">
       <p>&copy; 2026, Shatayu Deshpande. All rights reserved.</p>
       <p className="flex items-center gap-1">
         Made with

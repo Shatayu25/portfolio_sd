@@ -3,24 +3,24 @@ import TechPills from "./TechPills";
 
 function ProjectSection() {
   return (
-    <section className="bg-slate-200 py-20" id="work">
+    <section className="bg-zinc-900 py-20" id="work">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="my-4 flex flex-wrap font-poller text-2xl sm:my-6 sm:text-4xl md:my-8 md:text-5xl lg:my-10 lg:text-6xl">
-          <h1 className="text-red-500">
-            Featured <span className="text-red-950">Projects</span>
+          <h1 className="text-zinc-50">
+            Featured <span className="text-emerald-500">Projects</span>
           </h1>
           <span className="text-slate-400">&mdash;</span>
         </div>
-        <div className="flex flex-col gap-4 rounded-2xl bg-slate-500 p-4 font-roboto sm:p-8 md:p-8 lg:p-8">
+        <div className="flex flex-col gap-4 rounded-2xl border-[0.5px] border-zinc-800 bg-zinc-950 p-4 font-roboto sm:p-8">
           <div className="flex flex-wrap justify-between font-roboto">
-            <p className="cursor-pointer text-sm font-bold transition-all duration-300 hover:text-red-950 sm:text-lg md:text-xl lg:text-2xl">
+            <p className="cursor-pointer text-sm font-bold transition-all duration-300 hover:text-emerald-400 sm:text-lg md:text-xl lg:text-2xl">
               Wild Oasis&mdash; A hotel booking app
             </p>
             <a
               href="https://the-wild-oasis-sd.vercel.app/"
               target="_blank"
               rel="noreferrer"
-              className="flex cursor-pointer items-center gap-1 rounded-2xl bg-slate-800/40 p-1 text-xs text-slate-50 hover:bg-slate-200 hover:text-slate-800 sm:text-base md:text-base lg:text-base"
+              className="flex cursor-pointer items-center gap-1 rounded-2xl bg-emerald-600/20 p-1 text-xs text-emerald-400 hover:bg-emerald-500 hover:text-zinc-950 sm:text-base"
             >
               <span>
                 <HiArrowUpRight />
@@ -28,7 +28,7 @@ function ProjectSection() {
               <p>Live Demo</p>
             </a>
           </div>
-          <div className="lg:flex-no-wrap flex w-full flex-wrap items-start gap-4 sm:flex-wrap md:flex-nowrap">
+          <div className="flex w-full flex-wrap items-start gap-4 md:flex-nowrap">
             <div className="lg:w-[1/2]">
               <p className="text-sm sm:text-base md:text-base lg:text-base">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.

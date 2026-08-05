@@ -3,21 +3,21 @@ import { IoIosSend } from "react-icons/io";
 
 function ConnectSection() {
   return (
-    <section className="bg-slate-300 py-20" id="connect">
+    <section className="bg-zinc-950 py-20" id="connect">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="my-4 flex flex-col font-poller sm:my-6 md:my-8 lg:my-10">
-          <h1 className="text-2xl text-red-500 sm:text-4xl md:text-5xl lg:text-6xl">
-            Let&apos;s <span className="text-red-950">Connect!</span>
+          <h1 className="text-2xl text-zinc-50 sm:text-4xl md:text-5xl lg:text-6xl">
+            Let&apos;s <span className="text-emerald-500">Connect!</span>
           </h1>
-          <div className="flex flex-wrap items-center gap-1 font-roboto text-lg font-bold text-red-600 md:text-xl lg:text-2xl">
+          <div className="flex flex-wrap items-center gap-1 font-roboto text-base font-bold text-emerald-500 md:text-xl lg:text-2xl">
             <span>
               <FaRegHandshake />
             </span>
             <span>And discuss potential opportunities.</span>
           </div>
         </div>
-        <div className="mx-auto mt-16 w-full max-w-md rounded-lg bg-slate-800/40 p-6 font-roboto">
-          <form className="flex flex-col gap-3 text-slate-800">
+        <div className="mx-auto mt-16 w-full max-w-md rounded-lg border-[0.5px] border-emerald-800 bg-zinc-900 p-6 font-roboto">
+          <form className="flex flex-col gap-3 text-zinc-300">
             <label htmlFor="name" className="font-bold">
               Name:-&nbsp;
             </label>
@@ -25,7 +25,7 @@ function ConnectSection() {
               type="text"
               id="name"
               name="name"
-              className="rounded-2xl p-1"
+              className="rounded-2xl border-[0.5px] border-zinc-700 bg-zinc-950 p-1 text-zinc-100 placeholder-zinc-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
               placeholder="Please enter your name"
               required
             />
@@ -36,7 +36,7 @@ function ConnectSection() {
               type="email"
               id="email"
               name="email"
-              className="rounded-2xl p-1"
+              className="rounded-2xl border-[0.5px] border-zinc-700 bg-zinc-950 p-1 text-zinc-100 placeholder-zinc-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
               placeholder="Please enter your email"
               required
             />
@@ -47,7 +47,7 @@ function ConnectSection() {
               type="text"
               id="subject"
               name="subject"
-              className="rounded-2xl p-1"
+              className="rounded-2xl border-[0.5px] border-zinc-700 bg-zinc-950 p-1 text-zinc-100 placeholder-zinc-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
               placeholder="Subject"
             />
             <label htmlFor="message" className="font-bold">
@@ -57,10 +57,10 @@ function ConnectSection() {
               type="text"
               id="message"
               name="message"
-              className="rounded-2xl p-1 pb-20"
+              className="rounded-2xl border-[0.5px] border-zinc-700 bg-zinc-950 p-1 pb-20 text-zinc-100 placeholder-zinc-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
               placeholder="Please enter your message"
             />
-            <button className="mx-auto flex w-fit items-center gap-1 rounded-full border-[0.5px] border-black bg-red-500 p-3 text-black transition-all duration-[0.2s] hover:bg-red-600">
+            <button className="mx-auto flex w-fit items-center gap-1 rounded-full border-[0.5px] border-none bg-emerald-600 p-3 text-zinc-950 transition-all duration-[0.2s] hover:bg-emerald-500">
               <span>
                 <IoIosSend />
               </span>

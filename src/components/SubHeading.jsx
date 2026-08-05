@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 function SubHeading({ children }) {
   return (
-    <div className="flex items-center border-b-[1px] font-extrabold text-slate-900 text-sm md:text-base lg:text-lg xl:gap-1">
+    <div className="flex items-center border-b-[1px] text-sm font-extrabold text-zinc-100 md:text-base lg:text-lg xl:gap-1">
       {children}
     </div>
   );

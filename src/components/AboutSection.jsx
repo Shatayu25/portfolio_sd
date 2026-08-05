@@ -12,18 +12,17 @@ import TechPills from "./TechPills";
 
 function AboutSection() {
   return (
-    <section className="bg-slate-300 py-20" id="about">
+    <section className="bg-zinc-950 py-20" id="about">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="my-4 flex font-poller text-2xl sm:my-6 sm:text-4xl md:my-8 md:text-5xl lg:my-10 lg:text-6xl">
-          <h1 className="text-red-500">
-            About <span className="text-red-950">Me</span>
+          <h1 className="text-zinc-50">
+            About <span className="text-emerald-500">Me</span>
           </h1>
-          <span className="text-slate-400">&mdash;</span>
+          <span className="text-zinc-700">&mdash;</span>
         </div>
 
         <div className="grid gap-4 font-roboto md:grid-cols-3">
-          {/* Replaced w-screen and sm/md/lg widths with a single w-full */}
-          <div className="h-full w-full rounded-2xl bg-slate-500 p-4 md:col-start-1 md:col-end-3">
+          <div className="h-full w-full rounded-2xl border-[0.5px] border-zinc-800 bg-zinc-900 p-4 md:col-start-1 md:col-end-3">
             <SubHeading>
               <span>
                 <HiOutlineUser />
@@ -42,8 +41,7 @@ function AboutSection() {
             </p>
           </div>
 
-          {/* Replaced w-screen and sm/md/lg widths with a single w-full */}
-          <div className="flex h-full w-full flex-col justify-between rounded-2xl bg-slate-500 p-4">
+          <div className="flex h-full w-full flex-col justify-between rounded-2xl border-[0.5px] border-zinc-800 bg-zinc-900 p-4">
             <div>
               <SubHeading>
                 <span>
@@ -65,8 +63,7 @@ function AboutSection() {
           </div>
 
           <div className="md:col-start-1 md:col-end-3">
-            {/* Replaced w-screen and sm/md/lg widths with a single w-full */}
-            <div className="h-full w-full rounded-2xl bg-slate-500 p-4">
+            <div className="h-full w-full rounded-2xl border-[0.5px] border-zinc-800 bg-zinc-900 p-4">
               <SubHeading>
                 <span>
                   <HiOutlineCommandLine />
@@ -80,7 +77,7 @@ function AboutSection() {
                   </span>
                   <p className="">Frontend:-</p>
                 </div>
-                <div className="my-2 flex flex-wrap justify-items-center gap-2 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3">
+                <div className="my-2 flex flex-wrap justify-items-center gap-2 md:grid md:grid-cols-2 lg:grid-cols-3">
                   <TechPills>
                     <span className="inline-block h-4 w-4">
                       <img src="./js-logo.svg" alt="js-logo" />
@@ -136,8 +133,7 @@ function AboutSection() {
             </div>
           </div>
 
-          {/* Replaced w-screen and sm/md/lg widths with a single w-full */}
-          <div className="h-full w-full rounded-2xl bg-slate-500 p-4">
+          <div className="h-full w-full rounded-2xl border-[0.5px] border-zinc-800 bg-zinc-900 p-4">
             <SubHeading>
               <span>
                 <HiOutlineRocketLaunch />

@@ -4,7 +4,7 @@ function Navigation() {
       <ul className="flex gap-2 font-roboto sm:gap-6 md:gap-8 lg:gap-10">
         <li>
           <a
-            className="transition-all duration-200 hover:text-red-500"
+            className="transition-all duration-200 hover:text-emerald-400"
             href="#about"
           >
             About
@@ -12,7 +12,7 @@ function Navigation() {
         </li>
         <li>
           <a
-            className="transition-all duration-200 hover:text-red-500"
+            className="transition-all duration-200 hover:text-emerald-400"
             href="#work"
           >
             Work
@@ -20,7 +20,7 @@ function Navigation() {
         </li>
         <li>
           <a
-            className="transition-all duration-200 hover:text-red-500"
+            className="transition-all duration-200 hover:text-emerald-400"
             href="#connect"
           >
             Connect
