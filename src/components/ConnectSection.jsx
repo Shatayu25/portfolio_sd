@@ -2,8 +2,41 @@ import { FaRegHandshake } from "react-icons/fa";
 import { IoIosSend } from "react-icons/io";
 import { useActiveSection } from "../contexts/ActiveSectionContext";
 
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+import toast from "react-hot-toast";
+
 function ConnectSection() {
   const { connectRef } = useActiveSection();
+  const formRef = useRef();
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    const toastId = toast.loading("Sending...");
+
+    emailjs
+      .sendForm(
+        "service_36jr674",
+        "template_lruw1jk",
+        formRef.current,
+        "1Lv3_uuWyaBS1F9PZ",
+      )
+      .then(
+        (result) => {
+          toast.success("Message sent Successfully", { id: toastId });
+
+          e.target.reset();
+        },
+        (error) => {
+          toast.error("Failed to send message, Please Try Again.", {
+            id: toastId,
+          });
+          console.error(error.text);
+        },
+      );
+  }
+
   return (
     <section
       ref={connectRef}
@@ -23,7 +56,11 @@ function ConnectSection() {
           </div>
         </div>
         <div className="mx-auto mt-16 w-full max-w-md rounded-lg border-[0.5px] border-emerald-800 bg-zinc-900 p-6 font-roboto">
-          <form className="flex flex-col gap-3 text-zinc-300">
+          <form
+            ref={formRef}
+            className="flex flex-col gap-3 text-zinc-300"
+            onSubmit={sendEmail}
+          >
             <label htmlFor="name" className="font-bold">
               Name:-&nbsp;
             </label>

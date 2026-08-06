@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-timeline: ;
 }
 
 /* Tailwind's compiler specifically requires custom classes to be wrapped in @layer utilities to generate responsive prefixes like sm: and md:. */

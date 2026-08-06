@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -12,6 +13,18 @@ function App() {
       </main>
 
       <Footer />
+
+      <Toaster
+        position="bottom-right"
+        toastOptions={{
+          className: "font-roboto",
+          style: {
+            background: "#18181b",
+            color: "#d4d4d8",
+            border: "0.5px solid #065f46",
+          },
+        }}
+      />
     </div>
   );
 }
