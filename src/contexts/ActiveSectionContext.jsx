@@ -12,7 +12,7 @@ function ActiveSectionProvider({ children }) {
 
   useEffect(() => {
     const options = {
-      threshold: 0.5,
+      threshold: 1,
     };
 
     const callback = (entries) => {
