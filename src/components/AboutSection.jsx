@@ -1,18 +1,21 @@
 import {
   HiAcademicCap,
-  HiOutlineUser,
-  HiOutlineCommandLine,
-  HiOutlineRocketLaunch,
-  HiOutlineMapPin,
-  HiOutlineComputerDesktop,
   HiOutlineCircleStack,
+  HiOutlineCommandLine,
+  HiOutlineComputerDesktop,
+  HiOutlineMapPin,
+  HiOutlineRocketLaunch,
+  HiOutlineUser,
 } from "react-icons/hi2";
 import SubHeading from "./SubHeading";
 import TechPills from "./TechPills";
+import { useActiveSection } from "../contexts/ActiveSectionContext";
 
 function AboutSection() {
+  const { aboutRef } = useActiveSection();
+
   return (
-    <section className="bg-zinc-950 py-20" id="about">
+    <section ref={aboutRef} className="bg-zinc-950 py-20" id="about">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="my-4 flex font-poller text-2xl sm:my-6 sm:text-4xl md:my-8 md:text-5xl lg:my-10 lg:text-6xl">
           <h1 className="text-zinc-50">

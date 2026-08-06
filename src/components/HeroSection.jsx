@@ -1,9 +1,14 @@
 import { HiPlay } from "react-icons/hi2";
 import Anchor from "./Anchor";
+import { useActiveSection } from "../contexts/ActiveSectionContext";
 
 function HeroSection() {
+  const { homeRef } = useActiveSection();
   return (
-    <section className="sm:bg-terminal-grid flex min-h-screen flex-col items-center justify-center bg-zinc-950">
+    <section
+      ref={homeRef}
+      className="sm:bg-terminal-grid flex min-h-screen flex-col items-center justify-center bg-zinc-950"
+    >
       <div className="flex flex-col items-center justify-center">
         <h1 className="animate-move-in-right font-poller text-lg sm:text-4xl md:text-5xl lg:text-6xl">
           Hi,
@@ -34,7 +39,7 @@ function HeroSection() {
               alt="Github"
             />
           </Anchor>
-          <Anchor link="https://leetcode.com/u/Shatayu_25/">
+          <Anchor link="https://leetcode.com/u/Shatayu_2599/">
             <img
               className="h-full w-full"
               src="./leetcode-dark.svg"

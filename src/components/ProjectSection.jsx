@@ -1,15 +1,18 @@
 import { HiArrowUpRight } from "react-icons/hi2";
 import TechPills from "./TechPills";
+import { useActiveSection } from "../contexts/ActiveSectionContext";
 
 function ProjectSection() {
+  const { workRef } = useActiveSection();
+
   return (
-    <section className="bg-zinc-900 py-20" id="work">
+    <section ref={workRef} className="bg-zinc-900 py-20" id="work">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="my-4 flex flex-wrap font-poller text-2xl sm:my-6 sm:text-4xl md:my-8 md:text-5xl lg:my-10 lg:text-6xl">
           <h1 className="text-zinc-50">
             Featured <span className="text-emerald-500">Projects</span>
           </h1>
-          <span className="text-slate-400">&mdash;</span>
+          <span className="text-zinc-700">&mdash;</span>
         </div>
         <div className="flex flex-col gap-4 rounded-2xl border-[0.5px] border-zinc-800 bg-zinc-950 p-4 font-roboto sm:p-8">
           <div className="flex flex-wrap justify-between font-roboto">
@@ -66,12 +69,6 @@ function ProjectSection() {
                 <img src="./rq-logo.svg" alt="rq-logo" />
               </span>
               <p>React Query</p>
-            </TechPills>
-            <TechPills>
-              <span className="inline-block h-4 w-4">
-                <img src="./tailwind_logo.svg" alt="tailwind-logo" />
-              </span>
-              <p>Tailwind CSS</p>
             </TechPills>
             <TechPills>
               <span className="inline-block h-4 w-4">
