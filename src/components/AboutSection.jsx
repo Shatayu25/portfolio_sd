@@ -7,9 +7,15 @@ import {
   HiOutlineRocketLaunch,
   HiOutlineUser,
 } from "react-icons/hi2";
+
+import { useActiveSection } from "../contexts/ActiveSectionContext";
+
+import { techPillsDataFront } from "./techPillsDataFront";
+import { techPillsDataDB } from "./techPillsDataDB";
+import { techPillsDataCL } from "./techPillsDataCL";
+
 import SubHeading from "./SubHeading";
 import TechPills from "./TechPills";
-import { useActiveSection } from "../contexts/ActiveSectionContext";
 
 function AboutSection() {
   const { aboutRef } = useActiveSection();
@@ -81,42 +87,11 @@ function AboutSection() {
                   <p className="">Frontend:-</p>
                 </div>
                 <div className="my-2 flex flex-wrap justify-items-center gap-2 md:grid md:grid-cols-2 lg:grid-cols-3">
-                  <TechPills>
-                    <span className="inline-block h-4 w-4">
-                      <img src="./js-logo.svg" alt="js-logo" />
-                    </span>
-                    <p>JavaScript</p>
-                  </TechPills>
-                  <TechPills>
-                    <span className="inline-block h-4 w-4">
-                      <img src="./react_logo.svg" alt="react_logo" />
-                    </span>
-                    <p>React</p>
-                  </TechPills>
-                  <TechPills>
-                    <span className="inline-block h-4 w-4">
-                      <img src="./redux-logo.svg" alt="redux-logo" />
-                    </span>
-                    <p>Redux</p>
-                  </TechPills>
-                  <TechPills>
-                    <span className="inline-block h-4 w-4">
-                      <img src="./rq-logo.svg" alt="rq-logo" />
-                    </span>
-                    <p>React Query</p>
-                  </TechPills>
-                  <TechPills>
-                    <span className="inline-block h-4 w-4">
-                      <img src="./tailwind_logo.svg" alt="tailwind-logo" />
-                    </span>
-                    <p>Tailwind CSS</p>
-                  </TechPills>
-                  <TechPills>
-                    <span className="inline-block h-4 w-4">
-                      <img src="./nextjs.svg" alt="nextjs-logo" />
-                    </span>
-                    <p>Next.js</p>
-                  </TechPills>
+                  {techPillsDataFront.map(({ img, alt, name }) => (
+                    <TechPills img={img} key={alt} alt={alt}>
+                      {name}
+                    </TechPills>
+                  ))}
                 </div>
               </div>
               <div className="mt-4 flex w-full gap-5 rounded-2xl p-1">
@@ -126,12 +101,11 @@ function AboutSection() {
                   </span>
                   <p>Database:-</p>
                 </div>
-                <TechPills>
-                  <span className="inline-block h-4 w-4">
-                    <img src="./supabase-logo.svg" alt="supabase-logo" />
-                  </span>
-                  <p>Supabase</p>
-                </TechPills>
+                {techPillsDataDB.map(({ img, alt, name }) => (
+                  <TechPills img={img} key={alt} alt={alt}>
+                    {name}
+                  </TechPills>
+                ))}
               </div>
             </div>
           </div>
@@ -144,30 +118,11 @@ function AboutSection() {
               <p>Currently Learning</p>
             </SubHeading>
             <div className="mt-4 flex flex-wrap gap-4 md:flex-col md:py-2 lg:flex-col lg:py-4">
-              <TechPills>
-                <span className="inline-block h-4 w-4">
-                  <img src="./nodejs-logo.svg" alt="nodejs-logo" />
-                </span>
-                <p>Node.js</p>
-              </TechPills>
-              <TechPills>
-                <span className="inline-block h-4 w-4">
-                  <img src="./express-logo.svg" alt="express-logo" />
-                </span>
-                <p>express.js</p>
-              </TechPills>
-              <TechPills>
-                <span className="inline-block h-4 w-4">
-                  <img src="./mongodb-logo.svg" alt="mongodb-logo" />
-                </span>
-                <p>MongoDB</p>
-              </TechPills>
-              <TechPills>
-                <span className="inline-block h-4 w-4">
-                  <img src="./books-logo.svg" alt="books-logo" />
-                </span>
-                <p>CS Fundamentals</p>
-              </TechPills>
+              {techPillsDataCL.map(({ img, alt, name }) => (
+                <TechPills img={img} key={alt} alt={alt}>
+                  {name}
+                </TechPills>
+              ))}
             </div>
           </div>
         </div>

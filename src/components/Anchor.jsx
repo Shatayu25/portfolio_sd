@@ -1,5 +1,3 @@
-import PropTypes from "prop-types";
-
 function Anchor({ link, children }) {
   return (
     <a
@@ -12,11 +10,5 @@ function Anchor({ link, children }) {
     </a>
   );
 }
-
-// Done for props validation, to tell the props what data they can expect
-Anchor.propTypes = {
-  link: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
-};
 
 export default Anchor;
