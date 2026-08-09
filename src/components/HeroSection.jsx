@@ -53,7 +53,7 @@ function HeroSection() {
           className="flex animate-move-in-left items-center gap-1 rounded-full border-[0.5px] border-none bg-emerald-600 p-[4px] font-roboto text-zinc-950 transition-all duration-200 hover:bg-emerald-500 sm:gap-1 sm:p-[6px] md:gap-1 md:p-2 lg:gap-2 lg:p-4"
           target="_blank"
           rel="noreferrer"
-          href="https://drive.google.com/file/d/1m5h1uxWvLp-NEkX04kYuhqwxOpfqiAie/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1jT_DRxsf3KXwjkjL2oC0WkuuZxVBu1bG/view?usp=drive_link"
         >
           <span className="h-4 w-4 sm:h-5 sm:w-5 md:h-5 md:w-5 lg:h-6 lg:w-6">
             <img
