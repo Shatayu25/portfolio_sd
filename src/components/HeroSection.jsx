@@ -1,6 +1,8 @@
 import { HiPlay } from "react-icons/hi2";
-import Anchor from "./Anchor";
+
 import { useActiveSection } from "../contexts/ActiveSectionContext";
+
+import Anchor from "./Anchor";
 
 function HeroSection() {
   const { homeRef } = useActiveSection();

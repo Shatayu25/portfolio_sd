@@ -1,6 +1,8 @@
 import { useActiveSection } from "../contexts/ActiveSectionContext";
-import ProjectInfo from "./ProjectInfo";
+
 import { projectsData } from "./projectsData";
+
+import ProjectInfo from "./ProjectInfo";
 
 function ProjectSection() {
   const { workRef } = useActiveSection();

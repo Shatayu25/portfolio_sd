@@ -3,7 +3,7 @@ export const projectsData = [
     title: "Wild Oasis- A hotel booking app",
     link: "https://the-wild-oasis-sd.vercel.app/",
     description:
-      "This project is made by me, in which the tech stack used is react, react query, tailwind and supabase as a database. This project has a lot of features.",
+      "The Wild Oasis is a feature-rich React application built for hotel staff. Designed to handle real-world data fetching and complex UI state, it features a live interactive dashboard, secure authentication, and a modern dark-mode UI. It relies on React Query for advanced server-state caching and Supabase as a headless backend API.",
     projectImg: "./project_img.svg",
     techStack: [
       { img: "./react_logo.svg", alt: "react_logo", name: "React" },
