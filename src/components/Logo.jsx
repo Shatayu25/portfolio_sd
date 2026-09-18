@@ -1,7 +1,7 @@
 function Logo() {
   return (
     <a href='#'>
-      <img src='./logo-green.svg' alt='Home' />
+      <img src='./logo.svg' alt='Home' />
     </a>
   );
 }

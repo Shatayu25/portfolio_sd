@@ -5,7 +5,7 @@ import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
-    <div className="flex min-h-screen flex-col font-poller text-zinc-300">
+    <div className="font-dmserif flex min-h-screen flex-col text-zinc-300">
       <Header />
 
       <main className="flex-grow">
@@ -17,7 +17,7 @@ function App() {
       <Toaster
         position="bottom-right"
         toastOptions={{
-          className: "font-roboto",
+          className: "font-cascadia",
           style: {
             background: "#18181b",
             color: "#d4d4d8",

@@ -4,7 +4,7 @@ function Nav() {
   const { activeSection } = useActiveSection();
 
   return (
-    <ul className="hidden gap-2 font-roboto sm:flex sm:gap-6 md:gap-8 lg:gap-10">
+    <ul className="font-cascadia hidden gap-2 sm:flex sm:gap-6 md:gap-8 lg:gap-10">
       <li>
         <a
           className={

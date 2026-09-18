@@ -3,8 +3,8 @@ import TechPills from "./TechPills";
 
 function ProjectInfo({ data }) {
   return (
-    <div className="flex flex-col gap-4 rounded-2xl border-[0.5px] border-zinc-950 bg-zinc-950 p-4 font-roboto sm:p-8 mb-8">
-      <div className="flex flex-wrap justify-between font-roboto">
+    <div className="font-cascadia mb-8 flex flex-col gap-4 rounded-2xl border-[0.5px] border-zinc-950 bg-zinc-950 p-4 sm:p-8">
+      <div className="font-cascadia flex flex-wrap justify-between">
         <p className="cursor-pointer text-sm font-bold transition-all duration-300 hover:text-emerald-400 sm:text-lg md:text-xl lg:text-2xl">
           {data.title}
         </p>
