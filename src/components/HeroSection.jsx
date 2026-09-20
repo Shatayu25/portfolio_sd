@@ -7,10 +7,10 @@ function HeroSection() {
   return (
     <section
       ref={homeRef}
-      className="sm:bg-terminal-grid flex flex-col min-h-screen items-center justify-center bg-zinc-950"
+      className="sm:bg-terminal-grid flex min-h-screen flex-col items-center justify-center bg-zinc-950"
     >
       <div className="flex flex-col items-center justify-center">
-        <h1 className="font-dmserif animate-move-in-right text-lg tracking-wider sm:text-5xl md:text-6xl lg:text-7xl">
+        <h1 className="animate-move-in-right font-dmserif text-lg tracking-wider sm:text-5xl md:text-6xl lg:text-7xl">
           Hi,
           <span className="block tracking-wider text-emerald-500">
             I&apos;m Shatayu Deshpande
@@ -42,7 +42,7 @@ function HeroSection() {
           </Anchor>
         </div>
         <a
-          className="font-cascadia flex animate-move-in-left items-center gap-1 rounded-full border-[0.5px] border-none bg-emerald-600 p-[4px] text-zinc-950 transition-all duration-200 hover:bg-emerald-500 sm:gap-1 sm:p-[6px] md:gap-1 md:p-2 lg:gap-2 lg:p-4"
+          className="flex animate-move-in-left items-center gap-1 rounded-full border-[0.5px] border-none bg-emerald-600 p-[4px] font-cascadia text-zinc-950 transition-all duration-200 hover:bg-emerald-500 sm:gap-1 sm:p-[6px] md:gap-1 md:p-2 lg:gap-2 lg:p-4"
           target="_blank"
           rel="noreferrer"
           href="https://drive.google.com/file/d/1gjrzsLQ24rHGEowVlJ3wnqGaejLtizou/view?usp=drive_link"

@@ -1,38 +1,88 @@
+import { FaMapMarkerAlt, FaPhoneAlt, FaRegHandshake } from "react-icons/fa";
+import { HiEnvelope } from "react-icons/hi2";
+
 function Footer() {
   return (
-    <footer className="font-cascadia border-t-[0.5px] bg-zinc-950 p-4">
-      <div className="md:px mx-auto max-w-7xl bg-zinc-950 px-4 py-20">
-        <div className="flex flex-col">
-          <div className="font-dmserif my-10 flex flex-col">
-            <h1 className="text-2xl text-zinc-50 sm:text-4xl md:text-5xl lg:text-6xl">
-              Let&apos;s <span className="text-emerald-500">Connect!</span>
-            </h1>
-            <div className="font-cascadia flex flex-wrap items-center gap-1 text-base font-bold text-emerald-500 md:text-xl lg:text-2xl">
-              <span></span>
-              <span>And discuss potential opportunities.</span>
+    <section className="relative overflow-hidden bg-zinc-950 py-20">
+      <div className="pointer-events-none absolute inset-0 z-0 flex select-none items-center justify-center text-[15rem] opacity-5">
+        PORTFOLIO
+      </div>
+      <div className="mx-auto flex max-w-7xl flex-col px-8">
+        <div className="grid grid-cols-5">
+          <div className="relative z-10 col-span-2 text-zinc-50">
+            <p className="font-dmserif text-6xl tracking-wide">
+              Let&apos;s <span className="text-emerald-500">Connect</span>
+            </p>
+            <div className="flex items-center gap-2 text-xl tracking-wider text-emerald-500">
+              <span>
+                <FaRegHandshake />
+              </span>
+              <p>And Discuss Potential Opportunities</p>
             </div>
           </div>
-          <div className="flex">
-            <p>email</p>
-            <p>email</p>
-            <p>email</p>
+          <div className="col-start-4 col-end-6 rounded-2xl border-2 border-green-400 border-dashed font-cascadia mt-10">
+            <div className="flex flex-col p-4">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span>
+                    <FaPhoneAlt />
+                  </span>
+                  <p>Contact Details</p>
+                </div>
+                <p>+91- 9016784962</p>
+              </div>
+            </div>
+            <div className="flex flex-col p-4">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span>
+                    <HiEnvelope />
+                  </span>
+                  <p>Email</p>
+                </div>
+                <p>shatayudeshpande99@gmail.com</p>
+              </div>
+            </div>
+            <div className="flex flex-col p-4">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span>
+                    <FaMapMarkerAlt />
+                  </span>
+                  <p>Location</p>
+                </div>
+                <p>Vapi, Gujarat</p>
+              </div>
+            </div>
           </div>
-          <div className="flex justify-between mt-8">
-            <p>&copy;2026,Shatayu Deshpande. All rights reserved.</p>
-            <p className="flex items-center gap-1">
-              Made with
-              <span className="h-4 w-4 sm:h-6 sm:w-6 md:h-6 md:w-6 lg:h-6 lg:w-6">
-                <img src="./react_logo.svg" alt="react-logo" />
+        </div>
+        <div className="mt-10 flex justify-between border-t border-dashed">
+          <div>
+            <p className="flex items-center gap-1 tracking-wider">
+              MADE WITH
+              <span className="inline-block">
+                <img
+                  src="./react_logo.svg"
+                  className="h-5 w-5"
+                  alt="react-logo"
+                />
               </span>
-              and
-              <span className="h-4 w-4 sm:h-6 sm:w-6 md:h-6 md:w-6 lg:h-6 lg:w-6">
-                <img src="./tailwind_logo.svg" alt="tailwind-logo" />
+              &
+              <span className="inline-block">
+                <img
+                  src="tailwind_logo.svg"
+                  className="h-5 w-5"
+                  alt="tailwind-logo"
+                />
               </span>
             </p>
           </div>
+          <div className="tracking-wider">
+            <p>SHATAYU DESHPANDE &copy;</p>
+          </div>
         </div>
       </div>
-    </footer>
+    </section>
   );
 }
 
