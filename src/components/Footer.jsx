@@ -40,7 +40,7 @@ function Footer() {
                   </span>
                   <p>Email</p>
                 </div>
-                <p>shatayudeshpande99@gmail.com</p>
+                <a href="mailto:shatayudeshpande99@gmail.com">shatayudeshpande99@gmail.com</a>
               </div>
             </div>
             <div className="flex flex-col p-4">
