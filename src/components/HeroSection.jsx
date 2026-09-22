@@ -7,7 +7,7 @@ function HeroSection() {
   return (
     <section
       ref={homeRef}
-      className="sm:bg-terminal-grid flex min-h-screen flex-col items-center justify-center bg-zinc-950"
+      className="bg-terminal-grid flex min-h-screen flex-col items-center justify-center bg-zinc-950"
     >
       <div className="flex flex-col items-center justify-center">
         <h1 className="animate-move-in-right font-dmserif text-2xl md:text-6xl lg:text-7xl xl:text-[80px] tracking-wider">
