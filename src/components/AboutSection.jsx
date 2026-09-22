@@ -1,8 +1,10 @@
 import { HiCodeBracket } from "react-icons/hi2";
+import { useActiveSection } from "../contexts/ActiveSectionContext";
 
 function AboutSection() {
+  const { aboutRef } = useActiveSection();
   return (
-    <section className="bg-zinc-950 py-20">
+    <section ref={aboutRef} className="bg-zinc-950 py-20" id="about">
       <div className="mx-auto flex max-w-7xl flex-col gap-10 px-7 md:px-8">
         <div className="flex flex-col text-[34px] md:text-7xl lg:text-8xl">
           <div className="flex gap-2">
@@ -38,7 +40,7 @@ function AboutSection() {
             </p>
           </div>
           <div className="mt-6 flex flex-col">
-            <div className="grid grid-cols-2 border-t-2 border-dashed border-green-500 p-3 text-[19px] md:p-4 md:text-[35px] lg:text-[40px] xl:p-8 xl:text-5xl">
+            <div className="grid grid-cols-2 border-t border-dashed border-green-500 p-3 text-[19px] md:p-4 md:text-[35px] lg:border-t-2 lg:text-[40px] xl:p-8 xl:text-5xl">
               <div>
                 <p>FRONTEND &mdash;</p>
               </div>
@@ -63,7 +65,7 @@ function AboutSection() {
                 </span>
               </div>
             </div>
-            <div className="grid grid-cols-2 border-b-2 border-t-2 border-dashed border-green-500 p-3 text-[20px] md:p-4 md:text-[35px] lg:p-5 lg:text-[40px] xl:p-8 xl:text-5xl">
+            <div className="grid grid-cols-2 border-b border-t border-dashed border-green-500 p-3 text-[20px] md:p-4 md:text-[35px] lg:border-b-2 lg:border-t-2 lg:p-5 lg:text-[40px] xl:p-8 xl:text-5xl">
               <div>
                 <p>BACKEND &mdash;</p>
               </div>
@@ -79,7 +81,7 @@ function AboutSection() {
                 </span>
               </div>
             </div>
-            <div className="grid grid-cols-2 border-b-2 border-dashed border-green-500 p-3 text-[20px] md:p-4 md:text-[35px] lg:p-5 lg:text-[40px] xl:p-8 xl:text-5xl">
+            <div className="grid grid-cols-2 border-b border-dashed border-green-500 p-3 text-[20px] md:p-4 md:text-[35px] lg:border-b-2 lg:p-5 lg:text-[40px] xl:p-8 xl:text-5xl">
               <div>
                 <p>TESTING &mdash;</p>
               </div>

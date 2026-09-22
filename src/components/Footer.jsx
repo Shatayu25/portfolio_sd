@@ -3,7 +3,7 @@ import { HiEnvelope } from "react-icons/hi2";
 
 function Footer() {
   return (
-    <section className="relative overflow-hidden bg-zinc-950 py-20">
+    <section className="relative overflow-hidden bg-zinc-950 py-20" id="connect">
       <div className="pointer-events-none absolute inset-0 z-0 flex select-none items-center justify-center text-[3.5rem] opacity-10 md:text-[9rem] lg:text-[12rem] xl:text-[15rem]">
         PORTFOLIO
       </div>
