@@ -45,7 +45,7 @@ function HeroSection() {
           className="flex animate-move-in-left items-center gap-2 rounded-full border-[0.5px] border-none bg-emerald-600 p-1.5 font-cascadia text-zinc-950 transition-all duration-200 hover:bg-emerald-500 md:p-4"
           target="_blank"
           rel="noreferrer"
-          href="https://drive.google.com/file/d/1gjrzsLQ24rHGEowVlJ3wnqGaejLtizou/view?usp=drive_link"
+          href="https://drive.google.com/file/d/18zQUgkAmq4NV-KhEM5lpIiG5F-XzUjF2/view?usp=drive_link"
         >
           <span className="h-5 w-5 md:h-6 md:w-6">
             <img
