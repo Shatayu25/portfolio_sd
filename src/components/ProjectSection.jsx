@@ -8,8 +8,8 @@ function ProjectSection() {
   const { workRef } = useActiveSection();
   return (
     <section ref={workRef} className="bg-zinc-900 py-20" id="work">
-      <div className="mx-auto max-w-7xl px-4 md:px-8">
-        <div className="font-dmserif my-4 flex flex-wrap text-2xl sm:my-6 sm:text-4xl md:my-8 md:text-5xl lg:my-10 lg:text-6xl">
+      <div className="mx-auto max-w-7xl px-8">
+        <div className="my-6 md:my-8 flex flex-wrap font-dmserif text-4xl md:text-6xl">
           <h1 className="text-zinc-50">
             Pro<span className="text-emerald-500">jects </span>
           </h1>

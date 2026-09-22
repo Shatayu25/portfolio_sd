@@ -10,15 +10,15 @@ function HeroSection() {
       className="sm:bg-terminal-grid flex min-h-screen flex-col items-center justify-center bg-zinc-950"
     >
       <div className="flex flex-col items-center justify-center">
-        <h1 className="animate-move-in-right font-dmserif text-lg tracking-wider sm:text-5xl md:text-6xl lg:text-7xl">
+        <h1 className="animate-move-in-right font-dmserif text-2xl md:text-6xl lg:text-7xl xl:text-[80px] tracking-wider">
           Hi,
           <span className="block tracking-wider text-emerald-500">
             I&apos;m Shatayu Deshpande
           </span>
         </h1>
       </div>
-      <div className="mt-4 flex items-center gap-2 sm:mt-4 sm:gap-4 md:mt-8 md:gap-8 lg:mt-10 lg:gap-10">
-        <div className="flex animate-move-in-right gap-2 rounded-full border-[0.5px] border-emerald-800 bg-zinc-900 p-1 sm:gap-4 sm:p-2 md:gap-4 md:p-2 lg:gap-4 lg:p-4">
+      <div className="mt-8 md:mt-12 xl:mt-16 flex items-center gap-6 md:gap-10">
+        <div className="flex animate-move-in-right gap-3 md:gap-4 rounded-full border-[0.5px] xl:border-[1px] border-emerald-800 bg-zinc-900 p-2.5 md:p-4">
           <Anchor link="https://www.linkedin.com/in/shatayu-deshpande">
             <img
               className="h-full w-full"
@@ -42,21 +42,19 @@ function HeroSection() {
           </Anchor>
         </div>
         <a
-          className="flex animate-move-in-left items-center gap-1 rounded-full border-[0.5px] border-none bg-emerald-600 p-[4px] font-cascadia text-zinc-950 transition-all duration-200 hover:bg-emerald-500 sm:gap-1 sm:p-[6px] md:gap-1 md:p-2 lg:gap-2 lg:p-4"
+          className="flex animate-move-in-left items-center gap-2 rounded-full border-[0.5px] border-none bg-emerald-600 p-1.5 md:p-4 font-cascadia text-zinc-950 transition-all duration-200 hover:bg-emerald-500"
           target="_blank"
           rel="noreferrer"
           href="https://drive.google.com/file/d/1gjrzsLQ24rHGEowVlJ3wnqGaejLtizou/view?usp=drive_link"
         >
-          <span className="h-4 w-4 sm:h-5 sm:w-5 md:h-5 md:w-5 lg:h-6 lg:w-6">
+          <span className="h-5 w-5 md:h-6 md:w-6">
             <img
               className="h-full w-full"
               src="./download-logo.svg"
               alt="download"
             />
           </span>
-          <p className="text-xs sm:text-base md:text-base lg:text-base">
-            Resume
-          </p>
+          <p className="text-sm md:text-md p-[0.5px] xl:text-xl xl:p-[1px]">Resume</p>
         </a>
       </div>
     </section>
