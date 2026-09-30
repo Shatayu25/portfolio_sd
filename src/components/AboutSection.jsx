@@ -76,8 +76,11 @@ function AboutSection() {
                 <span className="h-8 w-8 md:h-14 md:w-14 lg:h-20 lg:w-20">
                   <img src="./mongodb-logo.svg" alt="mongodb-logo" />
                 </span>
-                <span className="h-fit w-8 bg-white p-[0.5px] md:w-14 md:p-1.5 lg:h-20 lg:w-20">
+                <span className="h-fit w-8 p-[0.5px] md:w-14 md:p-1.5 lg:h-20 lg:w-20">
                   <img src="./express-logo.svg" alt="express.js-logo" />
+                </span>
+                <span className="h-fit w-8 bg-white p-[0.5px] md:w-14 md:p-1.5 lg:h-20 lg:w-20">
+                  <img src="./jwt-logo.svg" alt="express.js-logo" />
                 </span>
               </div>
             </div>
