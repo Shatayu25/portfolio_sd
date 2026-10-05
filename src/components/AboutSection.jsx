@@ -90,6 +90,9 @@ function AboutSection() {
               </div>
               <div className="flex gap-4 md:gap-7">
                 <span className="h-8 w-8 md:h-14 md:w-14 lg:h-20 lg:w-20">
+                  <img src="./testing-library.svg" alt="rtl-logo" />
+                </span>
+                <span className="h-8 w-8 md:h-14 md:w-14 lg:h-20 lg:w-20">
                   <img src="./jest.svg" alt="jest-logo" />
                 </span>
                 <span className="h-8 w-8 md:h-14 md:w-14 lg:h-20 lg:w-20">
