@@ -1,6 +1,6 @@
 import { useActiveSection } from "../contexts/ActiveSectionContext";
 
-import { projectsData } from "./projectsData";
+import { projectsData } from "../utils/projectsData";
 
 import ProjectInfo from "./ProjectInfo";
 

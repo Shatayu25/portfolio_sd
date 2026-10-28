@@ -26,7 +26,7 @@ function ProjectInfo({ data }) {
             &rarr; {data.description}
           </p>
         </div>
-        <div className="mt-1 flex w-[1/2] cursor-pointer overflow-hidden rounded-lg border-[1px] md:mt-4">
+        <div className="mt-1 flex w-[1/2] object-contain cursor-pointer overflow-hidden rounded-lg border-[1px] md:mt-4">
           <img
             src={data.projectImg}
             className="h-auto w-full object-cover"
